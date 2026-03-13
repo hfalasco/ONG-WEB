@@ -6,7 +6,7 @@
   
   <p align="center">
     <img src="https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow?style=for-the-badge" alt="Status">
-    <img src="https://img.shields.io/badge/Curso-Engenharia%20de%20Software%C3%A7%C3%A3o-blue?style=for-the-badge" alt="Curso">
+    <img src="https://img.shields.io/badge/Engenharia%20de%20Software" alt="Curso">
   </p>
 
   <p>
