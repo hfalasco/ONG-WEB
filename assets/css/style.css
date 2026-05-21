@@ -628,4 +628,120 @@ footer a:hover {
   .contato-inner {
     padding: 1.5rem 1rem;
   }
+
+  /* =============================================
+   LICENÇA
+   ============================================= */
+
+.footer-links {
+  margin: 1rem 0;
+}
+
+.footer-links a {
+  color: var(--cor-primaria);
+  font-weight: 700;
+}
+
+.footer-links a:hover {
+  color: var(--cor-branco);
+}
+
+.copyright {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.projeto-info {
+  opacity: 0.7;
+  font-size: 0.8rem;
+}
+
+.licenca-box {
+  background: var(--cor-branco);
+  padding: 2rem;
+  border-radius: var(--borda-radius);
+  box-shadow: var(--sombra);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.licenca-box h3 {
+  color: var(--cor-header-footer);
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+}
+
+.licenca-box p,
+.licenca-box li {
+  color: var(--cor-texto-claro);
+}
+
+/* =============================================
+   PÁGINA ADOÇÃO
+   ============================================= */
+
+.hero-adocao {
+  padding: 4rem 1.5rem;
+}
+
+.lista-animais {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.animal-detalhe {
+  background: var(--cor-branco);
+  border-radius: var(--borda-radius);
+  padding: 2rem;
+  box-shadow: var(--sombra);
+
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.animal-galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.animal-galeria figure {
+  overflow: hidden;
+  border-radius: 14px;
+}
+
+.animal-galeria img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+
+  transition: transform 0.4s ease;
+}
+
+.animal-galeria img:hover {
+  transform: scale(1.05);
+}
+
+.animal-info h3 {
+  font-size: 2rem;
+  color: var(--cor-header-footer);
+  margin-bottom: 1rem;
+}
+
+.animal-info p {
+  margin: 1rem 0 1.5rem;
+  color: var(--cor-texto-claro);
+}
+
+@media (max-width: 900px) {
+
+  .animal-detalhe {
+    grid-template-columns: 1fr;
+  }
+
+}
+
 }
