@@ -3,187 +3,299 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Animais para Adoção</title>
-
-  <meta
-    name="description"
-    content="Conheça os animais resgatados disponíveis para adoção."
-  >
-
+  <title>Adoção — Apoio à Proteção Animal Guariba</title>
+  <meta name="description" content="Conheça os animais disponíveis para adoção na ONG Apoio à Proteção Animal de Guariba - SP.">
   <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
 
-  <!-- HEADER -->
+  <!-- ===== HEADER (mesmo do index) ===== -->
   <header>
     <div class="header-inner">
-
       <div class="logo">
         <span class="logo-icone">🐾</span>
-
         <div class="logo-texto">
           <h1>Apoio à Proteção Animal</h1>
           <span>Guariba - SP</span>
         </div>
       </div>
-
-      <nav aria-label="Navegação principal">
-        <ul>
-          <li><a href="index.html">Início</a></li>
-          <li><a href="licenca.html">Licença</a></li>
+      <nav>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul id="nav-menu">
+          <li><a href="index.html#inicio">Início</a></li>
+          <li><a href="index.html#animais">Animais</a></li>
+          <li><a href="index.html#sobre">Sobre</a></li>
+          <li><a href="adocao.html" class="btn-adotar">Quero Adotar</a></li>
         </ul>
       </nav>
-
     </div>
   </header>
-
+ 
   <main>
-
-    <!-- HERO -->
-    <section class="hero hero-adocao">
-
-      <div class="hero-conteudo">
-        <h2>Animais Resgatados</h2>
-
-        <p>
-          Conheça nossos bichinhos que aguardam um novo lar
-          cheio de carinho e responsabilidade.
-        </p>
-      </div>
-
+ 
+    <!-- ===== HERO ===== -->
+    <section class="hero-adocao">
+      <h1>🐾 Animais para Adoção</h1>
+      <p>Cada um deles tem uma história. Será que a próxima é com você?</p>
     </section>
-
-    <!-- LISTA -->
-    <section class="container">
-
-      <div class="secao-titulo">
-        <h2>Disponíveis para adoção</h2>
-
-        <p>
-          Cada adoção transforma duas vidas:
-          a do animal e a da família.
-        </p>
-
-        <div class="linha"></div>
-      </div>
-
-      <div class="lista-animais">
-
-        <!-- ANIMAL -->
-        <article class="animal-detalhe">
-
-          <div class="animal-galeria">
-
-            <figure>
-              <img
-                src="assets/img/bolinha.jpg"
-                alt="Cachorro Bolinha"
-              >
-            </figure>
-
-            <figure>
-              <img
-                src="assets/img/bolinha2.jpg"
-                alt="Bolinha brincando"
-              >
-            </figure>
-
-            <figure>
-              <img
-                src="assets/img/bolinha3.jpg"
-                alt="Bolinha descansando"
-              >
-            </figure>
-
+ 
+    <!-- ===== FILTROS ===== -->
+    <div class="filtros" role="group" aria-label="Filtrar por espécie">
+      <button class="filtro-btn ativo" data-filtro="todos">Todos</button>
+      <button class="filtro-btn" data-filtro="cao">🐶 Cães</button>
+      <button class="filtro-btn" data-filtro="gato">🐱 Gatos</button>
+      <button class="filtro-btn" data-filtro="disponivel">Disponíveis</button>
+    </div>
+ 
+    <!-- ===== GRID DE ANIMAIS ===== -->
+    <div class="grid-adocao" id="grid-adocao">
+ 
+      <!-- ─── BOLINHA ─── -->
+      <article class="card-adocao" data-tipo="cao">
+        <div class="carrossel" data-total="3">
+          <span class="carrossel-contador">1 / 3</span>
+          <div class="carrossel-track">
+            <div class="carrossel-slide">🐶</div>
+            <div class="carrossel-slide">😴</div>
+            <div class="carrossel-slide">🦴</div>
           </div>
-
-          <div class="animal-info">
-
-            <h3>Bolinha 🐶</h3>
-
-            <div class="tags">
-              <span class="tag">Cão</span>
-              <span class="tag">Médio Porte</span>
-              <span class="tag">2 anos</span>
-              <span class="tag">Vacinado</span>
-            </div>
-
-            <p>
-              Bolinha é muito dócil, brincalhão e se dá bem
-              com crianças e outros animais.
-            </p>
-
-            <a href="index.html#contato" class="btn-card">
-              Quero adotar
-            </a>
-
+          <button class="carrossel-btn prev" aria-label="Foto anterior">‹</button>
+          <button class="carrossel-btn next" aria-label="Próxima foto">›</button>
+          <div class="carrossel-dots">
+            <button class="dot ativo" aria-label="Foto 1"></button>
+            <button class="dot" aria-label="Foto 2"></button>
+            <button class="dot" aria-label="Foto 3"></button>
           </div>
-
-        </article>
-
-        <!-- ANIMAL -->
-        <article class="animal-detalhe">
-
-          <div class="animal-galeria">
-
-            <figure>
-              <img
-                src="assets/img/mimi1.jpg"
-                alt="Gata Mimi"
-              >
-            </figure>
-
-            <figure>
-              <img
-                src="assets/img/mimi2.jpg"
-                alt="Mimi descansando"
-              >
-            </figure>
-
+        </div>
+        <div class="card-info">
+          <h3>Bolinha</h3>
+          <div class="card-tags">
+            <span class="tag">Cão</span>
+            <span class="tag">Médio porte</span>
+            <span class="tag">2 anos</span>
+            <span class="tag">Vacinado</span>
           </div>
-
-          <div class="animal-info">
-
-            <h3>Mimi 🐱</h3>
-
-            <div class="tags">
-              <span class="tag">Gata</span>
-              <span class="tag">Pequeno Porte</span>
-              <span class="tag">1 ano</span>
-              <span class="tag">Castrada</span>
-            </div>
-
-            <p>
-              Mimi é calma, carinhosa e perfeita para ambientes internos.
-            </p>
-
-            <a href="index.html#contato" class="btn-card">
-              Quero adotar
-            </a>
-
+          <p class="card-desc">Bolinha é brincalhão, adora correr e se dá bem com crianças. Está esperando uma família com espaço e muito amor!</p>
+          <a href="https://wa.me/+5516993713823?text=Olá!%20Tenho%20interesse%20em%20adotar%20o%20Bolinha." 
+          class="btn-interesse" target="_blank" rel="noopener">
+            Tenho interesse 💚
+          </a>
+        </div>
+      </article>
+ 
+      <!-- ─── MIMI ─── -->
+      <article class="card-adocao" data-tipo="gato" data-status="disponivel">
+        <div class="carrossel" data-total="2">
+          <span class="badge-status badge-disponivel">Disponível</span>
+          <span class="carrossel-contador">1 / 2</span>
+          <div class="carrossel-track">
+            <div class="carrossel-slide">🐱</div>
+            <div class="carrossel-slide">😻</div>
           </div>
-
-        </article>
-
-      </div>
-
-    </section>
-
-  </main>
-
-  <!-- FOOTER -->
+          <button class="carrosse l-btn prev" aria-label="Foto anterior">‹</button>
+          <button class="carrossel-btn next" aria-label="Próxima foto">›</button>
+          <div class="carrossel-dots">
+            <button class="dot ativo" aria-label="Foto 1"></button>
+            <button class="dot" aria-label="Foto 2"></button>
+          </div>
+        </div>
+        <div class="card-info">
+          <h3>Mimi</h3>
+          <div class="card-tags">
+            <span class="tag">Gata</span>
+            <span class="tag">Pequeno porte</span>
+            <span class="tag">1 ano</span>
+            <span class="tag">Castrada</span>
+          </div>
+          <p class="card-desc">Mimi é tranquila, carinhosa e adora um cantinho quentinho para dormir. Perfeita para apartamento.</p>
+          <a href="https://wa.me/+5516993713823?text=Olá!%20Tenho%20interesse%20em%20adotar%20a%20Mimi." 
+          class="btn-interesse" target="_blank" rel="noopener">
+            Tenho interesse 💚
+          </a>
+        </div>
+      </article>
+ 
+      <!-- ─── REX ─── -->
+      <article class="card-adocao" data-tipo="cao" data-status="reservado">
+        <div class="carrossel" data-total="4">
+          <span class="badge-status badge-reservado">Reservado</span>
+          <span class="carrossel-contador">1 / 4</span>
+          <div class="carrossel-track">
+            <div class="carrossel-slide">🐕</div>
+            <div class="carrossel-slide">🐾</div>
+            <div class="carrossel-slide">🎾</div>
+            <div class="carrossel-slide">😄</div>
+          </div>
+          <button class="carrossel-btn prev" aria-label="Foto anterior">‹</button>
+          <button class="carrossel-btn next" aria-label="Próxima foto">›</button>
+          <div class="carrossel-dots">
+            <button class="dot ativo" aria-label="Foto 1"></button>
+            <button class="dot" aria-label="Foto 2"></button>
+            <button class="dot" aria-label="Foto 3"></button>
+            <button class="dot" aria-label="Foto 4"></button>
+          </div>
+        </div>
+        <div class="card-info">
+          <h3>Rex</h3>
+          <div class="card-tags">
+            <span class="tag">Cão</span>
+            <span class="tag">Grande porte</span>
+            <span class="tag">3 anos</span>
+            <span class="tag">Vacinado</span>
+          </div>
+          <p class="card-desc">Rex é leal, protetor e ama uma boa caminhada. Precisa de espaço e um tutor ativo. Atualmente com adoção em processo.</p>
+          <a href="https://wa.me/+5516993713823?text=Olá!%20Tenho%20interesse%20em%20adotar%20o%20Rex." 
+          class="btn-interesse" target="_blank" rel="noopener">
+            Tenho interesse 💚
+          </a>
+        </div>
+      </article>
+ 
+      <!-- ─── PIPOCA ─── -->
+      <article class="card-adocao" data-tipo="gato" data-status="disponivel">
+        <div class="carrossel" data-total="3">
+          <span class="badge-status badge-disponivel">Disponível</span>
+          <span class="carrossel-contador">1 / 3</span>
+          <div class="carrossel-track">
+            <div class="carrossel-slide">🐈</div>
+            <div class="carrossel-slide">😸</div>
+            <div class="carrossel-slide">🧶</div>
+          </div>
+          <button class="carrossel-btn prev" aria-label="Foto anterior">‹</button>
+          <button class="carrossel-btn next" aria-label="Próxima foto">›</button>
+          <div class="carrossel-dots">
+            <button class="dot ativo" aria-label="Foto 1"></button>
+            <button class="dot" aria-label="Foto 2"></button>
+            <button class="dot" aria-label="Foto 3"></button>
+          </div>
+        </div>
+        <div class="card-info">
+          <h3>Pipoca</h3>
+          <div class="card-tags">
+            <span class="tag">Gato</span>
+            <span class="tag">Médio porte</span>
+            <span class="tag">6 meses</span>
+            <span class="tag">Vacinado</span>
+          </div>
+          <p class="card-desc">Pipoca é um filhote cheio de energia! Adora brincar, explorar e é super sociável com outros gatos.</p>
+          <a href="https://wa.me/+5516993713823?text=Olá!%20Tenho%20interesse%20em%20adotar%20a%20Pipoca." 
+          class="btn-interesse" target="_blank" rel="noopener"> <!-- ISSO E MUITO FODA, bizarro basicamente ele manda msg direto pra pessoa com um pre-texto definido-->>
+            Tenho interesse 💚
+          </a>
+        </div>
+      </article>
+ 
+      <!-- mensagem se filtro não encontrar nada -->
+      <p class="sem-resultados" id="sem-resultados">Nenhum animal encontrado para esse filtro. 😢</p>
+ 
+    </div><!-- /grid-adocao -->
+ 
+   
+  <!-- ===== FOOTER ===== -->
   <footer>
-
-    <p>
-      🐾 <strong>Apoio à Proteção Animal - Guariba</strong>
-    </p>
-
-    <p>
-      &copy; 2026 Todos os direitos reservados.
-    </p>
-
+    <div class="footer-conteudo">
+      <p>🐾 <strong>Apoio à Proteção Animal - Guariba</strong></p>
+      <address>
+        Guariba - SP |
+        <a>natalia.clc@hotmail.com</a>
+      </address>
+      <nav class="footer-links" aria-label="Links institucionais">
+        <a href="licenca.html">Direitos e Licença</a>
+      </nav>
+      <p class="copyright">&copy; 2026 Apoio à Proteção Animal. Todos os direitos reservados.</p>
+      <p class="projeto-info">Projeto acadêmico · Engenharia de Software · Frontend</p>
+    </div>
   </footer>
-
+ 
+  <script src="assets/js/script.js"></script>
+  <script>
+    // ──────────────────────────────────────
+    // CARROSSEL — funciona de forma independente
+    // pra cada card na página
+    // ──────────────────────────────────────
+    document.querySelectorAll('.carrossel').forEach(carrossel => {
+      const track     = carrossel.querySelector('.carrossel-track');
+      const slides    = carrossel.querySelectorAll('.carrossel-slide');
+      const dots      = carrossel.querySelectorAll('.dot');
+      const contador  = carrossel.querySelector('.carrossel-contador');
+      const total     = slides.length;
+      let atual       = 0;
+      let autoplay    = null;
+ 
+      function irPara(indice) {
+        // wrap around
+        atual = (indice + total) % total;
+        track.style.transform = `translateX(-${atual * 100}%)`;
+        dots.forEach((d, i) => d.classList.toggle('ativo', i === atual));
+        contador.textContent = `${atual + 1} / ${total}`;
+      }
+ 
+      carrossel.querySelector('.next').addEventListener('click', () => {
+        irPara(atual + 1);
+        resetAutoplay();
+      });
+      carrossel.querySelector('.prev').addEventListener('click', () => {
+        irPara(atual - 1);
+        resetAutoplay();
+      });
+      dots.forEach((dot, i) => dot.addEventListener('click', () => {
+        irPara(i);
+        resetAutoplay();
+      }));
+ 
+      // swipe touch
+      let touchX = 0;
+      carrossel.addEventListener('touchstart', e => { touchX = e.touches[0].clientX; }, { passive: true });
+      carrossel.addEventListener('touchend', e => {
+        const diff = touchX - e.changedTouches[0].clientX;
+        if (Math.abs(diff) > 40) { irPara(atual + (diff > 0 ? 1 : -1)); resetAutoplay(); }
+      }, { passive: true });
+ 
+      // autoplay (avança automaticamente)
+      function startAutoplay() {
+        autoplay = setInterval(() => irPara(atual + 1), 3500);
+      }
+      function resetAutoplay() {
+        clearInterval(autoplay);
+        startAutoplay();
+      }
+      startAutoplay();
+ 
+      // pausa quando mouse está sobre o card
+      carrossel.closest('.card-adocao').addEventListener('mouseenter', () => clearInterval(autoplay));
+      carrossel.closest('.card-adocao').addEventListener('mouseleave', startAutoplay);
+    });
+ 
+    // ──────────────────────────────────────
+    // FILTROS
+    // ──────────────────────────────────────
+    const filtrosBtns = document.querySelectorAll('.filtro-btn');
+    const cards       = document.querySelectorAll('.card-adocao');
+    const semResult   = document.getElementById('sem-resultados');
+ 
+    filtrosBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filtrosBtns.forEach(b => b.classList.remove('ativo'));
+        btn.classList.add('ativo');
+ 
+        const filtro = btn.dataset.filtro;
+        let visiveis = 0;
+ 
+        cards.forEach(card => {
+          const tipo   = card.dataset.tipo;
+          const status = card.dataset.status;
+          const mostra = filtro === 'todos'
+            || filtro === tipo
+            || filtro === status;
+ 
+          card.classList.toggle('oculto', !mostra);
+          if (mostra) visiveis++;
+        });
+ 
+        semResult.classList.toggle('visivel', visiveis === 0);
+      });
+    });
+ 
+  </script>
 </body>
 </html>
