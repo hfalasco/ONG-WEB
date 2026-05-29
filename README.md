@@ -59,18 +59,6 @@ ONG-WEB/
 └── README.md           # Documentação do projeto
 ```
 
----
-
-## 👥 Como Contribuir
-
-1. Faça um **fork** do repositório
-2. Crie uma branch para sua feature: `git checkout -b feature/nome-da-feature`
-3. Commit suas alterações: `git commit -m 'feat: descrição da alteração'`
-4. Faça o push: `git push origin feature/nome-da-feature`
-5. Abra um **Pull Request**
-
----
-
 ## 📄 Licença
 
 Este projeto é de caráter acadêmico e foi desenvolvido sem fins lucrativos, com o propósito de apoiar causas de proteção animal na cidade de Guariba - SP.
