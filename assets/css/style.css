@@ -1434,3 +1434,86 @@ footer a:hover {
       .evento-card { grid-template-columns: 75px 1fr; }
       .galeria-grid { grid-template-columns: repeat(2, 1fr); }
     }
+
+/* =============================================
+    PÁGINA ARTIGOS
+   ============================================= */
+
+    .hero-artigos {
+      background: linear-gradient(135deg, #1a6b3a 0%, #2d9e5f 60%, #f5a623 100%);
+      padding: 5rem 1.5rem 3.5rem;
+      text-align: center;
+      color: #fff;
+    }
+    .hero-artigos h1 { font-size: clamp(1.8rem, 4vw, 3rem); margin-bottom: .5rem; }
+    .hero-artigos p  { font-size: 1.1rem; opacity: .9; max-width: 560px; margin: 0 auto; }
+
+    .grid-artigos {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.8rem;
+      max-width: 1200px;
+      margin: 3rem auto 4rem;
+      padding: 0 1.5rem;
+    }
+
+    .card-artigo {
+      background: var(--cor-branco);
+      border-radius: var(--borda-radius);
+      box-shadow: var(--sombra);
+      overflow: hidden;
+      transition: transform var(--transicao), box-shadow var(--transicao);
+      text-align: center;
+    }
+    .card-artigo:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 32px rgba(0,0,0,.14);
+    }
+
+    .card-artigo-img {
+      width: 100%;
+      height: 220px;
+      overflow: hidden;
+      background: #e8f5ee;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .card-artigo-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+      padding: 0.5rem;
+    }
+
+    .card-artigo-corpo {
+      padding: 1.2rem;
+    }
+
+    .card-artigo h3 {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--cor-header-footer);
+      margin-bottom: .5rem;
+    }
+
+    .card-artigo-meta {
+      font-size: .85rem;
+      color: var(--cor-texto-claro);
+      margin-bottom: 1.2rem;
+    }
+
+    .card-artigo .btn-card {
+      display: inline-block;
+      padding: .6rem 1.4rem;
+      background: var(--cor-primaria);
+      color: var(--cor-branco);
+      border-radius: 8px;
+      font-weight: 800;
+      font-size: .9rem;
+      transition: background var(--transicao);
+    }
+    .card-artigo .btn-card:hover {
+      background: #c96828;
+    }
