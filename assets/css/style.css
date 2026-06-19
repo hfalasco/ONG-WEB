@@ -340,7 +340,7 @@ section {
 
 .card-animal .foto {
   width: 100%;
-  height: 200px;
+  height: 150px;
   object-fit: cover;
   background: #e8f5ee;
 }
@@ -1446,12 +1446,17 @@ footer a:hover {
    ============================================= */
 
     .hero-artigos {
-      background: linear-gradient(135deg, #1a6b3a 0%, #2d9e5f 60%, #f5a623 100%);
+      background: linear-gradient(135deg, #0d3d21 0%, #1a6b3a 60%, #c97a10 100%);
       padding: 5rem 1.5rem 3.5rem;
       text-align: center;
       color: #fff;
     }
-    .hero-artigos h1 { font-size: clamp(1.8rem, 4vw, 3rem); margin-bottom: .5rem; }
+    .hero-artigos h1 {
+    font-family: var(--fonte-titulo);
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    margin-bottom: .5rem;
+    font-style: normal; /* garante que não fica itálico */
+}
     .hero-artigos p  { font-size: 1.1rem; opacity: .9; max-width: 560px; margin: 0 auto; }
 
     .grid-artigos {

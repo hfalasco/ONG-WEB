@@ -6,6 +6,79 @@
   <title>Adoção | Apoio à Proteção Animal - Guariba</title>
   <meta name="description" content="Conheça os animais disponíveis para adoção responsável na ONG Apoio à Proteção Animal de Guariba - SP.">
   <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    /* ===== FIX CARROSSEL — setas posicionadas corretamente ===== */
+    .card-animal .foto {
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* trilho e slides */
+    .carr-track {
+      display: flex;
+      transition: transform 0.35s ease;
+      width: 100%;
+    }
+    .carr-slide {
+      min-width: 100%;
+      width: 100%;
+      flex-shrink: 0;
+    }
+    .carr-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* setas */
+    .carr-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10;
+      background: rgba(0, 0, 0, 0.45);
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 2rem;
+      height: 2rem;
+      font-size: 1.2rem;
+      line-height: 1;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s;
+    }
+    .carr-btn:hover { background: rgba(0, 0, 0, 0.7); }
+    .carr-btn.prev  { left: 0.4rem; }
+    .carr-btn.next  { right: 0.4rem; }
+    .carr-btn.oculto { display: none; }
+
+    /* dots */
+    .carr-dots {
+      position: absolute;
+      bottom: 0.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 0.35rem;
+      z-index: 10;
+    }
+    .carr-dot {
+      width: 0.5rem;
+      height: 0.5rem;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.5);
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      transition: background 0.2s;
+    }
+    .carr-dot.ativo { background: #fff; }
+
+  </style>
 </head>
 <body>
 
@@ -62,7 +135,6 @@
         <!-- BRANCÃO -->
         <article class="card-animal" data-tags="adulto macho urgente">
           <div class="foto">
-            <span class="badge-urgente">Urgente</span>
             <div class="carr-track">
               <div class="carr-slide"><img src="assets/img/brancao.jpeg" alt="Brancão"></div>
               <div class="carr-slide"><img src="assets/img/brancao2.jpeg" alt="Brancão 2"></div>
